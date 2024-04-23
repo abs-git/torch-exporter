@@ -1,0 +1,8 @@
+**/__pycache__
+
+tool/test/*
+!tool/test/README.md
+tool/runs/*
+!tool/runs/README.md
+tool/save/*
+!tool/save/README.md
