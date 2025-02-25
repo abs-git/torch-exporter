@@ -9,7 +9,7 @@ from common.utils import letterbox, scale_coords
 def main():
 
     pose_img_path = '/workspace/mm/resources/human-pose.jpg'
-    pose_path = '/workspace/weights/model-pose-s__trt10.0.1__sm8.6__cuda12.4/end2end.engine'
+    pose_path = '/workspace/weights/model.engine'
 
     img = cv2.imread(pose_img_path)
     x = torch.tensor(img.copy()).permute(2,0,1)
