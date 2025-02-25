@@ -11,8 +11,8 @@ def main():
 
     # test set
     # input_size: (11,3,256,128) * 2
-    team_a_dir = '/workspace/resnet/test/PX_PH_A/0'
-    team_b_dir = '/workspace/resnet/test/PX_PH_A/1'
+    team_a_dir = '/workspace/resnet/0'
+    team_b_dir = '/workspace/resnet1'
 
     team_a_samples = os.listdir(team_a_dir)[:11]
     team_b_samples = os.listdir(team_b_dir)[:11]
@@ -39,7 +39,7 @@ def main():
     inputs = torch.stack(inputs).to('cuda:0')                # (22,3,256,128)
 
     # model
-    engine_path = '/workspace/weights/trt10.0.1__sm8.6__cuda12.4/resnet18_NMI_08107_ARI_08820_F_09410.pt.engine'
+    engine_path = '/workspace/weights/test.engine'
 
     engine = TRTWrapper(engine_path=engine_path,
                         input_shapes=[(256,128)],
