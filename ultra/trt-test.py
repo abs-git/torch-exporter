@@ -54,7 +54,7 @@ def main():
         bbox = r[0]
         cv2.rectangle(img, (int(bbox[0]), int(bbox[1])), (int(bbox[2]), int(bbox[3])), (225,255,0), 2)
 
-    cv2.imwrite('/workspace/ultra/resources/tennis-ball.jpg', img)
+    cv2.imwrite('/workspace/ultra/resources/test.jpg', img)
 
 
 if __name__=='__main__':
