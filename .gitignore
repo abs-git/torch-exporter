@@ -1,0 +1,17 @@
+**__pycache__/
+
+*.zip
+*.mp4
+*.avi
+*.jpg
+*.png
+
+*.tar
+*.tar.gz
+
+*.pt
+*.pth
+*.onnx
+*.engine
+
+

@@ -1,8 +1,0 @@
-test/*
-!test/README.md
-runs/*
-!runs/README.md
-save/*
-!save/README.md
-
-__pycache__/
