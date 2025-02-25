@@ -18,7 +18,7 @@ def main():
     x = x.to('cuda:0')
 
 
-    engine_dir = '/workspace/weights/tennis_ball_yolov8s-p6_trt10.0.1__sm8.6__cuda12.4/'
+    engine_dir = '/workspace/weights/'
     engine_name = 'yolov8s.engine'
 
     engine_path = os.path.join(engine_dir, engine_name)
