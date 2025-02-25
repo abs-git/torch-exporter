@@ -1,0 +1,17 @@
+matplotlib>=3.3.0
+numpy==1.23.1
+opencv-python==4.9.0.80
+pillow>=7.1.2
+pyyaml>=5.3.1
+requests>=2.23.0
+scipy>=1.4.1
+pyarrow
+pandas
+tqdm>=4.64.0
+hub-sdk>=0.0.2
+#tensorrt>=7.0.0
+onnx>=1.12.0
+onnxruntime>=1.12.0
+onnxruntime-gpu>=1.12.0
+onnxsim>=0.4.35
+ultralytics

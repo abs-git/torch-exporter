@@ -1,0 +1,14 @@
+**__pycache__/
+
+*.zip
+*.mp4
+*.avi
+*.jpg
+*.png
+
+*.pt
+*.engine
+*.onnx
+*.json
+
+**mmdeploy/
