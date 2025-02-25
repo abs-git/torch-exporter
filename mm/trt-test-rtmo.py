@@ -10,8 +10,8 @@ from common.utils import letterbox, scale_boxes, scale_coords
 def main():
 
     bottomup_img_path = '/workspace/mm/resources/beatles.jpg'
-    bottomup_path = '/workspace/weights/rtmo-l__trt10.0.1__sm8.6__cuda12.4/end2end.engine'
-    # bottomup_path = '/workspace/weights/rtmo-l__trt10.0.1__sm8.9__cuda12.4/end2end.engine'
+    bottomup_path = '/workspace/weights/end2end.engine'
+    # bottomup_path = '/workspace/weights/end2end.engine'
 
     img = cv2.imread(bottomup_img_path)
     x = torch.tensor(img.copy()).permute(2,0,1)
