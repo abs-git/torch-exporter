@@ -10,7 +10,7 @@ from common.utils import letterbox, scale_boxes
 def main():
 
     det_img_path = '/workspace/mm/resources/beatles.jpg'
-    det_path = '/workspace/weights/model-det__trt10.0.1__sm8.6__cuda12.4/end2end.engine'
+    det_path = '/workspace/weights/model.engine'
 
     img = cv2.imread(det_img_path)
     x = torch.tensor(img.copy()).permute(2,0,1)
