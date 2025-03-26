@@ -9,8 +9,8 @@
 
 ### Install
 ```shell
-git clone -b converting/yolo git@github.com:theo-pixelscope/exporter.git
-cd exporter
+git clone -b converting/yolo git@github.com:abs-git/torch-exporter.git
+cd torch-exporter
 ```
 
 ```shell
@@ -31,13 +31,13 @@ export COMPUTE_CAPABILITY=$(python3 -c "import torch; device = torch.cuda.curren
 export ENV_SUFFIX=trt${TENSORRT_VERSION}__sm${COMPUTE_CAPABILITY}__cuda${CUDA_VERSION}
 
 
-# soccer ball 3.1 (yolov9-pose seq)
+# yolov9-pose
 # (1,3,1920,1920) (1,7,75600)
 python3 ultra/tools/deploy.py \
         --model_dir /workspace/weights \
         --model_name soccer_ball_yolov9-pose.pt \
         --model_type yolov9-pose \
-        --output_dir /workspace/weights/soccer_ball_yolov9-pose_${ENV_SUFFIX} \
+        --output_dir /workspace/weights/yolov9-pose_${ENV_SUFFIX} \
         --input_size 1920,1920 \
         --channel 3 \
         --device 0 \
@@ -45,13 +45,13 @@ python3 ultra/tools/deploy.py \
         --simplify
 
 
-# fieldhockey ball 1.4 (yolov11-pose seq)
+# yolov11-pose
 # (1,3,1280,1280) (1,8,33600)
 python3 ultra/tools/deploy.py \
         --model_dir /workspace/weights \
         --model_name fieldhockey_ball_yolov11-pose.pt \
         --model_type yolov11-pose \
-        --output_dir /workspace/weights/fieldhockey_ball_yolov11-pose_${ENV_SUFFIX} \
+        --output_dir /workspace/weights/yolov11-pose_${ENV_SUFFIX} \
         --input_size 1280,1280 \
         --channel 3 \
         --device 0 \
@@ -59,13 +59,13 @@ python3 ultra/tools/deploy.py \
         --simplify
 
 
-# tac50 person 2.0 (yolov11)
+# yolov11
 # (1,3,2240,2240) (1,5,102900)
 python3 ultra/tools/deploy.py \
         --model_dir /workspace/weights \
         --model_name tac50_person_yolov11.pt \
         --model_type yolov11 \
-        --output_dir /workspace/weights/tac50_person_yolov11_${ENV_SUFFIX} \
+        --output_dir /workspace/weights/yolov11_${ENV_SUFFIX} \
         --input_size 2240,2240 \
         --channel 3 \
         --device 0 \
