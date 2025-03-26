@@ -8,7 +8,7 @@ from common.utils import letterbox, nms_8, scale_boxes
 
 
 def main():
-    img_path = '/workspace/ultra/resources/tennis.jpg'
+    img_path = '/workspace/ultra/resources/test.jpg'
 
     img = cv2.imread(img_path)
     x = torch.tensor(img.copy()).permute(2,0,1)
