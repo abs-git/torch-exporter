@@ -11,7 +11,7 @@
 
 ### Install
 ```shell
-git clone -b mmdeploy git@github.com:theo-pixelscope/exporter.git
+git clone -b mmdeploy git@github.com:abs-git/torch-exporter.git
 cd exporter
 ```
 
